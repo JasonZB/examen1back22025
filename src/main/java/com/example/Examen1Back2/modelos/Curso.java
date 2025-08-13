@@ -8,10 +8,10 @@ public class Curso {
     @I
     @Ge(strategy = IDENTITY)
     private Integer id;
-    private String nombre
+    private String nombre;
 
     @ManyToOne
-    @JoinColumn(name="fk_docente", referencedColumnName = "id");
+    @JoinColumn(name="fk_docente", referencedColumnName = "id")
     @JsonBackReference(value = "docente-curso")
     Docente docente
 
