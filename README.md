@@ -30,3 +30,22 @@ Usuario.java
 5. Las anotaciones de column estaban mal escritas, estaban como “colun”
 
 6. Eliminé el enumerated en tipoUsuario y lo dejé como string
+
+   
+
+   Curso.java
+
+Correcciones realizadas
+
+1. Anotacion Id incompleta corregida
+ 
+2. El GeneratedValue estaba totalmente incompleto, usé el mismo de las otras clases, el .identity
+   
+3. Errores de syntax sobre “;” en algunas lineas corregidas, ejemplo, ; en anotaciones, las anotaciones no llevan ;
+   
+4. El constructor fue corregido, le faltaba Docente
+   
+5. getters and setters agregados
+   
+6. @table (name= cursos) no estaba agregado
+
