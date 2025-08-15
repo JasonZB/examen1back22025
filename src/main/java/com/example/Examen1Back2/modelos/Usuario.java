@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class Usuario {
 
     @Id
-    @GeneratedValue(strategy = GenerationType)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_usuario")
     private Integer id;
 
@@ -19,8 +19,9 @@ public class Usuario {
     private String contraseña;
     private String telefono;
 
-    @Enumerated(EnumType.STRING)
+    @Column(name = "tipo_usuario", nullable = false, length = 20)
     private String tipoUsuario;
+
 
     //Estableciendo la relacion uno a uno con la tabla docente
     @OneToOne(mappedBy = "usuario")
@@ -44,9 +45,6 @@ public class Usuario {
         return id;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getNombre() {
         return nombre;
