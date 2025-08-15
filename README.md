@@ -14,3 +14,19 @@ correcciones realizadas
 
 
 Correccion propia: El comentario que dejé abajo de la libreria jakarta no es valido, me acabo de dar cuenta que usar * es para usar todas las librerias, pensé que tenia que cambiarlo por Id, pero eso no es correcto
+
+
+
+Usuario.java
+
+1.Correcciones realizadas
+
+2. Errores de syntax en general con las “;” corregido.
+
+3. Correccion de anotacion, antes era Entit y ahora es Entity
+
+4. El  GeneratedValue estaba incompleto, le faltaba el .IDENTITY
+
+5. Las anotaciones de column estaban mal escritas, estaban como “colun”
+
+6. Eliminé el enumerated en tipoUsuario y lo dejé como string
